@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static',filename='/css/styles1.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Results</title>
+</head>
+<body>
+  <div class="container" >
+
+    <table>
+      <thead>
+        <tr>
+          <th>Target Grade</th>
+          <th>Required Marks</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>O</td>
+          <td>{{ O }}</td>
+        </tr>
+        <tr>
+          <td>A+</td>
+          <td>{{ APlus }}</td>
+        </tr>
+        <tr>
+          <td>A</td>
+          <td>{{ A }}</td>
+        </tr>
+        <tr>
+          <td>B+</td>
+          <td>{{ BPlus }}</td>
+        </tr>
+        <tr>
+          <td>B</td>
+          <td>{{ B }}</td>
+        </tr>
+        <tr>
+          <td>C</td>
+          <td>{{ C }}</td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="box-root padding-top--24 flex-flex flex-direction--column">
+      <div class="footer-link padding-top--24">
+      <span>©Pankaj Bhattarai</span><br>
+      <span><i class="fa fa-github"></i> Follow me on <a href="https://github.com/im-endangered" target="_blank">Github</a>
+      </span><br>
+      <span>Developed using Flask</span>
+      </div>
+   </div>
+  </div>
+</body>
+</html>
