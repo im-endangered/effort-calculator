@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="{{ url_for('static',filename='/css/styles.css') }}">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <title>Effort Calculator</title>
+   </head>
+   <body>
+      <div class="login-root">
+         <div class="box-root padding-top--24 flex-flex flex-direction--column" style="flex-grow: 1; z-index: 9;">
+            
+            <div class="formbg-outer">
+               <div class="formbg">
+                  <div class="formbg-inner padding-horizontal--48">
+                     <h1>How much marks needed for which grade</h1>
+
+                     <span class="padding-bottom--15">Enter following details</span>
+                     <form id='stripe-login' action="/submit" method="POST">
+                        <div class="field thisOnly padding-bottom">
+                           <label for="fullMarks">Full marks in End Sem</label>
+                           <select name="fullMarks" id="fullMarks">
+                              <option value="75">75</option>
+                              <option value="100" >100</option>
+                           </select>
+                        </div>
+                        <div class="field thisOnly padding-bottom">
+                           <label for="internal">Internal Marks (out of 50)</label>
+                           <input type="number" id="internal" name="internal" min=0 max=50>
+                        </div>
+                        
+                        <div class="field padding-bottom--24">
+                           <input type="submit" name="submit" value="Submit">
+                        </div>
+                     </form>
+                  </div>
+               </div>
+               <div class="footer-link padding-top--24">
+                  <span>©Pankaj Bhattarai</span>
+                  <span><i class="fa fa-github"></i> Follow me on <a href="https://github.com/im-endangered" target="_blank">Github</a>
+                  </span>
+                  <span>Developed using Flask</span>
+               </div>
+            </div>
+         </div>
+      </div>
+      </div>
+      </div>
+   </body>
+</html>
